@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>GeoWeek 2021 - Contacts</title>
+	<!-- ===================== META ===================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="assets/img/susl_logo.png">
+	<!-- ===================== STYLE ===================== -->
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- ======================slick slider======================== -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <style type="text/css">
+    	.feedback-row {
+    		margin-bottom: 20px;
+    		border-bottom: 1px solid gray;
+    		padding-bottom: 5px;
+    		display: block;
+    	}
+
+    	#feedbacks .col {
+    		width: 100%;
+    		text-align: justify;
+    	}
+
+    	#feedbacks {
+    		margin-top: 25px;
+    	}
+    </style>
+</head>
+
+<body id="home" class="version-2" style="background-color: #fff;">
+	<!--===================== HEADER =====================-->
+	<geo-header></geo-header>
+	<!--=================== HEADER END ===================-->
+
+	<!--=================== PAGE-TITLE ===================-->
+	<div class="page-title" style="background-image: url(assets/img/pages/feedback.png);">
+		<div class="container">
+			<h1 class="title-line-left">Feedback</h1>
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="home">Home</a></li>
+					<li>Contact Us</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--================= PAGE-TITLE END =================-->
+
+	<!--================= PAGE-CONTACTS =================-->
+	<section class="page-contacts">
+		<div class="container">
+			<h2 class="title-line-left">Feedback</h2>
+			<div class="row">
+				<div class="col-12 col-sm-8">
+					<form id='feedbackform' action="php/feedback.php" name="feedbackform" method="post">
+						<ul class="form-cover">
+							<li class="inp-name"><input id="name" type="text" name="name" placeholder="Name"></li>
+							<li class="inp-email"><input id="email" type="text" name="designation" placeholder="Designation"></li>
+							<li class="inp-text"><textarea id="comments" name="feedback" placeholder="Feedback"></textarea></li>
+						</ul>
+						<div class="btn-form-cover">
+							<button id="#submit" type="submit" class="btn" name="submit">Submit</button>
+						</div>
+					</form>
+					<!-- <div id="feedbacks"></div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================= PAGE-CONTACTS END =================-->
+
+	<!--===================== S-MAP =====================-->
+	<!-- <section class="s-map">
+		<div id="map" class="cont-map google-map"></div>
+	</section> -->
+	<!--==================== S-MAP END ===================-->
+	<!-- Leaflet Map -->
+	
+	<!--==================== S-PARTNERS ====================-->
+	<section>
+		<sponsor-line></sponsor-line>
+	</section>
+	<!--================== S-PARTNERS END ==================-->
+	<!-- Leaflet Map End -->
+	<!--===================== FOOTER =====================-->
+	<geo-footer></geo-footer>
+	<!--=================== FOOTER END ===================-->
+
+	<!--===================== TO TOP =====================-->
+	<a class="to-top" href="#home">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</a>
+	<!--=================== TO TOP END ===================-->
+
+
+
+	<!--===================== SCRIPT	=====================-->
+	<script src="assets/js/header.js"></script>
+	<script src="assets/js/footer.js"></script>
+	<script src="assets/js/sponsor-line.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key="></script> -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
